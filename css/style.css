@@ -1,0 +1,33 @@
+/* @media screen and (min-width: 900px) {
+    body {
+        background-color: orange;
+    }
+    
+} */
+
+
+/* Base style - white */
+body {
+    background-color: #ffffff;
+    color:#2a2a2a;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/* The color green is at 600px or wider */
+@media (min-width: 600px) {
+    body {
+        background-color: #4caf50;
+        font-size: 20px;
+        color: #ffffff;
+    }
+}
+
+/* The color indigo is at 900px or wider */
+@media (min-width: 900px) {
+    body {
+        background-color: #3f51b5;
+    }
+}
+
