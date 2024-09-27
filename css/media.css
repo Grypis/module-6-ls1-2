@@ -1,0 +1,97 @@
+body {
+  background-color: teal;
+}
+
+/* ======================== MIN-WIDTH and MAX-WIDTH ===================== */
+
+/* 480px */
+/* @media (min-width: 480px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* 768px */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 0-1023px */
+/* @media (max-width: 1023px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 0-767px */
+/* @media (max-width: 767px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* ============================ AND ============================ */
+/* 
+768px + false
+0px - 1023px true
+Для цього повинно бути 2 true */
+
+/* 768px - 1023px */
+
+/* @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* =========================== OR =================================== */
+/* 1 - true */
+
+/* 0 - 767px - true
+1024px + true */
+
+/* 768px - 1023px = false */
+/* @media (max-width: 767px), (min-width: 1024px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* ========================== TYPES =================================== */
+/* 
+all
+screen
+print 
+speech
+*/
+
+/* @media all - за замовченням. */
+/* @media screen - екран */
+
+/* @media print {
+  .menu,
+  .button {
+    display: none;
+  }
+} */
+
+/* @media only screen and (min-width: 768px) {
+  body {
+    background-color: blueviolet;
+  }
+} */
+
+/* ================================ ORIENTATION =========================== */
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: blueviolet;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: yellowgreen;
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  height: 100vh;
+}
+
+/* 
+1x - 96dpi
+2x - 192dpi
+3x - 288dpi 
+*/
+
+.hero {
+  max-width: 1200px;
+  min-height: 675px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url('../images/retina/bg-desktop.jpg');
+  background-size: cover;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../images/retina/bg-desktop@2x.jpg');
+  }
+}
+
+.section {
+  padding: 50px 0;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
