@@ -26,6 +26,13 @@ body {
   background-size: cover;
 }
 
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/retina/bg-mobile@2x.jpg);
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
@@ -35,13 +42,27 @@ body {
   }
 }
 
-@media only scren and (min-width: 1200px) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/retina/bg-tablet@2x.jpg);
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
         .hero {
     max-width: 1200px;
     min-height: 675px;
           
     background-image: url(../images/retina/bg-desktop.jpg);
 }
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/retina/bg-desktop@2x.jpg);
+  }
+}
+
 
 /* .hero {
   max-width: 1200px;
@@ -58,6 +79,7 @@ body {
 .section {
   padding: 50px 0;
 }
+
 .team-list {
   display: flex;
   justify-content: space-between;
